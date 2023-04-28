@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "engines": {
+    "node": "18"
+  },
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.2",
+    "nuxt": "^3.4.2",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2"
+  },
+  "dependencies": {
+    "@tresjs/cientos": "^2.0.0-beta.6",
+    "@tresjs/core": "^2.0.0-beta.13",
+    "three": "^0.151.3"
+  }
+}
