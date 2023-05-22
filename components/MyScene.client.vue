@@ -26,7 +26,7 @@ const config = reactive({
 })
 
 const gl = reactive({
-	clearColor: '#82DBC5',
+	clearColor: '#595959',
 	powerPreference: 'high-performance',
 })
 
