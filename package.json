@@ -1,9 +1,10 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt-tres-starter",
+  "version": "1.0.0",
   "engines": {
     "node": "18"
   },
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -12,14 +13,16 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@types/node": "^18.16.2",
-    "nuxt": "^3.4.2",
+    "@types/node": "^18.16.14",
+    "nuxt": "^3.5.1",
     "sass": "^1.62.1",
-    "sass-loader": "^13.2.2"
+    "sass-loader": "^13.2.2",
+    "vite-plugin-glsl": "^1.1.2"
   },
   "dependencies": {
-    "@tresjs/cientos": "^2.0.0-beta.6",
-    "@tresjs/core": "^2.0.0-beta.13",
-    "three": "^0.151.3"
+    "@tresjs/cientos": "latest",
+    "@tresjs/core": "latest",
+    "gsap": "^3.11.5",
+    "three": "latest"
   }
 }

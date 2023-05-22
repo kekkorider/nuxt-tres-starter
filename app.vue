@@ -1,8 +1,10 @@
 <template>
 	<MyScene />
+
+	<Credits />
 </template>
 
-<style>
+<style lang="scss">
 html,
 body,
 #__nuxt {
