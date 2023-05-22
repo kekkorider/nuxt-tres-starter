@@ -14,7 +14,7 @@
 				by
 				<NuxtLink
 					to="https://www.francescomichelini.com"
-					_target="_blank"
+					target="_blank"
 					rel="noopener"
 					>Francesco Michelini</NuxtLink
 				>
