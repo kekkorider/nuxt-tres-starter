@@ -2,7 +2,7 @@
 	<TresCanvas v-bind="gl" window-size>
 		<TresPerspectiveCamera :position="[0, 1.7, 7]" :look-at="[0, 0, 0]" />
 
-		<OrbitControls />
+		<OrbitControls :enabled="config.orbitControlsEnabled" />
 
 		<SampleBox :position="[-2, 0, 0]" />
 
@@ -14,12 +14,21 @@
 
 <script setup>
 import { TresCanvas } from '@tresjs/core'
-import { OrbitControls } from '@tresjs/cientos'
+import { OrbitControls, useTweakPane } from '@tresjs/cientos'
 
-const gl = {
+//
+// Refs
+//
+const { pane } = useTweakPane()
+
+const config = reactive({
+	orbitControlsEnabled: true,
+})
+
+const gl = reactive({
 	clearColor: '#82DBC5',
 	powerPreference: 'high-performance',
-}
+})
 
 //
 // Lifecycle
@@ -28,5 +37,21 @@ onMounted(async () => {
 	await nextTick()
 
 	// Do stuff on mount
+	createDebugPane()
 })
+
+//
+// Functions
+//
+function createDebugPane() {
+	pane.addSeparator()
+
+	pane.addInput(gl, 'clearColor', { label: 'Clear Color' })
+
+	pane.addSeparator()
+
+	pane.addInput(config, 'orbitControlsEnabled', {
+		label: 'Orbit Controls enabled',
+	})
+}
 </script>
