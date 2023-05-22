@@ -2,6 +2,8 @@
 	<TresCanvas v-bind="gl" window-size>
 		<TresPerspectiveCamera :position="[0, 1.7, 7]" :look-at="[0, 0, 0]" />
 
+		<OrbitControls />
+
 		<SampleBox :position="[-2, 0, 0]" />
 
 		<Suspense>
@@ -12,6 +14,7 @@
 
 <script setup>
 import { TresCanvas } from '@tresjs/core'
+import { OrbitControls } from '@tresjs/cientos'
 
 const gl = {
 	clearColor: '#82DBC5',
