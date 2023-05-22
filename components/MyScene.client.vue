@@ -7,7 +7,7 @@
 		<SampleBox :position="[-2, 0, 0]" />
 
 		<Suspense>
-			<Suzanne :position="[2, 0, 0]" ref="suzanneRef" />
+			<Suzanne :position="[2, 0, 0]" />
 		</Suspense>
 	</TresCanvas>
 </template>
