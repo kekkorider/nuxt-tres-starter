@@ -21,6 +21,8 @@ import { OrbitControls, useTweakPane } from '@tresjs/cientos'
 //
 const { pane } = useTweakPane()
 
+const sampleStore = useSampleStore()
+
 const config = reactive({
 	orbitControlsEnabled: true,
 })
@@ -52,6 +54,20 @@ function createDebugPane() {
 
 	pane.addInput(config, 'orbitControlsEnabled', {
 		label: 'Orbit Controls enabled',
+	})
+
+	pane.addSeparator()
+
+	pane.addButton({ title: 'Increase counter (Pinia)' }).on('click', () => {
+		sampleStore.increment()
+	})
+
+	pane.addButton({ title: 'Decreate counter (Pinia)' }).on('click', () => {
+		sampleStore.decrement()
+	})
+
+	pane.addMonitor(sampleStore, 'count', {
+		label: 'Pinia counter',
 	})
 }
 </script>

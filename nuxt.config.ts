@@ -27,8 +27,18 @@ export default defineNuxtConfig({
           'Maven+Pro': [400, 500, 700]
         }
       }
+    ],
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: ['defineStore', 'acceptHMRUpdate']
+      }
     ]
   ],
+
+  imports: {
+    dirs: ['stores']
+  },
 
   vue: {
     compilerOptions: {
