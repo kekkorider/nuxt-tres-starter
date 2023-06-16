@@ -1,6 +1,6 @@
 {
   "name": "nuxt-tres-starter",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "engines": {
     "node": "18"
   },
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.0.1",
+    "@tresjs/nuxt": "^1.0.0-alpha.2",
     "@types/node": "^18.16.14",
     "nuxt": "^3.5.3",
     "sass": "^1.63.4",
@@ -23,9 +24,8 @@
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
     "@tresjs/cientos": "latest",
-    "@tresjs/core": "^2.2.0",
     "gsap": "^3.12.1",
     "pinia": "^2.1.4",
-    "three": "latest"
+    "three": "^0.153.0"
   }
 }
