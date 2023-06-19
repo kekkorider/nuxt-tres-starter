@@ -23,7 +23,7 @@
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
     "@tresjs/cientos": "latest",
-    "@tresjs/core": "latest",
+    "@tresjs/core": "^2.2.0",
     "gsap": "^3.12.1",
     "pinia": "^2.1.4",
     "three": "latest"
