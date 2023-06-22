@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.0.1",
-    "@tresjs/nuxt": "^1.0.0-alpha.2",
+    "@tresjs/nuxt": "^1.0.0",
     "@types/node": "^18.16.14",
     "nuxt": "^3.5.3",
     "sass": "^1.63.4",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
-    "@tresjs/cientos": "latest",
+    "@tresjs/cientos": "^2.1.4",
     "gsap": "^3.12.1",
     "pinia": "^2.1.4",
     "three": "^0.153.0"
