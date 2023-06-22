@@ -19,6 +19,7 @@ export default defineNuxtConfig({
   ],
 
   modules: [
+    '@tresjs/nuxt',
     [
       '@nuxtjs/google-fonts', {
         prefetch: true,
@@ -38,12 +39,6 @@ export default defineNuxtConfig({
 
   imports: {
     dirs: ['stores']
-  },
-
-  vue: {
-    compilerOptions: {
-      isCustomElement: tag => tag.startsWith('Tres') && tag !== 'TresCanvas'
-    }
   },
 
   vite: {
