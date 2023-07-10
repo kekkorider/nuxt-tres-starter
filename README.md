@@ -23,7 +23,7 @@ const { $gsap } = useNuxtApp()
 The plugin file is located in `/plugins/gsap.js`. Additional GSAP plugin can be imported and registered directly into this file and they will be available in the whole application.
 
 > **Warning**
-> 
+>
 > Some GSAP plugins like the `SplitText` plugin cause errors in the application if registered globally, so you have to check if you're on the client first.
 
 ```js
@@ -63,7 +63,14 @@ pnpm install
 Start the development server on `http://localhost:3000`
 
 ```bash
+# yarn
+yarn dev
+
+# npm
 npm run dev
+
+# pnpm
+pnpm run dev
 ```
 
 ## Production
@@ -71,11 +78,25 @@ npm run dev
 Build the application for production:
 
 ```bash
+# yarn
+yarn build
+
+# npm
 npm run build
+
+# pnpm
+pnpm run build
 ```
 
 Locally preview production build:
 
 ```bash
+# yarn
+yarn preview
+
+# npm
 npm run preview
+
+# pnpm
+pnpm run preview
 ```
