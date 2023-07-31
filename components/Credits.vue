@@ -48,6 +48,7 @@
 	position: fixed;
 	left: 30px;
 	bottom: 30px;
+	z-index: 2;
 }
 
 .header {
