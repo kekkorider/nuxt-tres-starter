@@ -45,17 +45,21 @@ onMounted(async () => {
 // Functions
 //
 function createDebugPane() {
-	pane.addSeparator()
+	pane.title = 'Configuration'
 
-	pane.addInput(gl, 'clearColor', { label: 'Clear Color' })
+	pane.addBinding(gl, 'clearColor', { label: 'Clear Color', colorMode: 'hex' })
 
-	pane.addSeparator()
+	pane.addBlade({
+		view: 'separator',
+	})
 
-	pane.addInput(config, 'orbitControlsEnabled', {
+	pane.addBinding(config, 'orbitControlsEnabled', {
 		label: 'Orbit Controls enabled',
 	})
 
-	pane.addSeparator()
+	pane.addBlade({
+		view: 'separator',
+	})
 
 	pane.addButton({ title: 'Increase counter (Pinia)' }).on('click', () => {
 		sampleStore.increment()
@@ -65,8 +69,9 @@ function createDebugPane() {
 		sampleStore.decrement()
 	})
 
-	pane.addMonitor(sampleStore, 'count', {
+	pane.addBinding(sampleStore, 'count', {
 		label: 'Pinia counter',
+		readonly: true,
 	})
 }
 </script>

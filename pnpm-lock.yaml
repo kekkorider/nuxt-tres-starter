@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.4.11
     version: 0.4.11(vue@3.3.4)
   '@tresjs/cientos':
-    specifier: ^3.0.1
-    version: 3.0.1(three@0.155.0)(vue@3.3.4)
+    specifier: ^3.2.0
+    version: 3.2.0(three@0.155.0)(tweakpane@4.0.0)(vue@3.3.4)
   '@tresjs/core':
     specifier: ^3.0.1
     version: 3.0.1(three@0.155.0)(vue@3.3.4)
@@ -34,6 +34,12 @@ devDependencies:
   '@tresjs/nuxt':
     specifier: ^1.1.3
     version: 1.1.3(vue@3.3.4)
+  '@tweakpane/core':
+    specifier: ^2.0.0
+    version: 2.0.0
+  '@tweakpane/plugin-essentials':
+    specifier: ^0.2.0
+    version: 0.2.0(tweakpane@4.0.0)
   '@types/node':
     specifier: ^18.16.14
     version: 18.16.14
@@ -2027,17 +2033,19 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@tresjs/cientos@3.0.1(three@0.155.0)(vue@3.3.4):
-    resolution: {integrity: sha512-lLpsLopVdgxTw+bbFjZiIRymt4Q9Ye1cASOdTdnIEgD7mwWd3tMWM6oRREZEHIonmmYtvJ7TDJzYlHZU/yGxDw==}
+  /@tresjs/cientos@3.2.0(three@0.155.0)(tweakpane@4.0.0)(vue@3.3.4):
+    resolution: {integrity: sha512-oivKNu2YqAMJ5MS4bh9XffxnN26hvbiMbC38Hb2n7Nd6FlxuZ3ksKSuKGqg5b/wCGap255EZx7+gEvwCVcWT8A==}
     peerDependencies:
       three: '>=0.133'
+      tweakpane: '>=3.0.0'
       vue: '>=3.3'
     dependencies:
-      '@tresjs/core': 3.0.1(three@0.155.0)(vue@3.3.4)
-      '@vueuse/core': 10.2.1(vue@3.3.4)
-      camera-controls: 2.7.0(three@0.155.0)
+      '@tresjs/core': 3.1.0(three@0.155.0)(vue@3.3.4)
+      '@vueuse/core': 10.4.1(vue@3.3.4)
+      camera-controls: 2.7.1(three@0.155.0)
       three: 0.155.0
-      three-stdlib: 2.23.13(three@0.155.0)
+      three-stdlib: 2.25.0(three@0.155.0)
+      tweakpane: 4.0.0
       vue: 3.3.4
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -2050,11 +2058,25 @@ packages:
       vue: '>=3.3'
     dependencies:
       '@alvarosabu/utils': 3.1.1
-      '@vueuse/core': 10.2.1(vue@3.3.4)
+      '@vueuse/core': 10.4.1(vue@3.3.4)
       three: 0.155.0
       vue: 3.3.4
     transitivePeerDependencies:
       - '@vue/composition-api'
+
+  /@tresjs/core@3.1.0(three@0.155.0)(vue@3.3.4):
+    resolution: {integrity: sha512-mRiBJYjD5voM+g5LqwIFOFj7WJiUsm5RVkN4AiEkifuEN5CCh+pSgBJQkk2lepuC7dUIfWJZz3xy5xG3I6szzg==}
+    peerDependencies:
+      three: '>=0.133'
+      vue: '>=3.3'
+    dependencies:
+      '@alvarosabu/utils': 3.1.1
+      '@vueuse/core': 10.4.1(vue@3.3.4)
+      three: 0.155.0
+      vue: 3.3.4
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
 
   /@tresjs/nuxt@1.1.3(vue@3.3.4):
     resolution: {integrity: sha512-SBxfrjbYx8ASqm4PCy9Xm/t3if2uA+2k1sNFbFEWZw1rKR7xvKRzaLMoeq/HyNrWrYV1XE/0aHv7VsS3FYMGEQ==}
@@ -2089,6 +2111,18 @@ packages:
     dependencies:
       '@tufjs/canonical-json': 2.0.0
       minimatch: 9.0.3
+    dev: true
+
+  /@tweakpane/core@2.0.0:
+    resolution: {integrity: sha512-reIUN8bj+YuB/PyhcqPAMuV3/t2P6iHPlR73++xwx+vW2RZ2LRYhXvcs+3VgbubTjyLOiek6a4T5rsbHwOPKqw==}
+    dev: true
+
+  /@tweakpane/plugin-essentials@0.2.0(tweakpane@4.0.0):
+    resolution: {integrity: sha512-/kO90nfm0y0CYJPUvoNrjXhjNoqr+RaoySIdJmy++pb5vrSHi/DXdxG/sPszUPZggDY9M31RTacnxXi6Dv7r8Q==}
+    peerDependencies:
+      tweakpane: ^4.0.0-beta.2
+    dependencies:
+      tweakpane: 4.0.0
     dev: true
 
   /@tweenjs/tween.js@18.6.4:
@@ -2369,22 +2403,22 @@ packages:
   /@vue/shared@3.3.4:
     resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
 
-  /@vueuse/core@10.2.1(vue@3.3.4):
-    resolution: {integrity: sha512-c441bfMbkAwTNwVRHQ0zdYZNETK//P84rC01aP2Uy/aRFCiie9NE/k9KdIXbno0eDYP5NPUuWv0aA/I4Unr/7w==}
+  /@vueuse/core@10.4.1(vue@3.3.4):
+    resolution: {integrity: sha512-DkHIfMIoSIBjMgRRvdIvxsyboRZQmImofLyOHADqiVbQVilP8VVHDhBX2ZqoItOgu7dWa8oXiNnScOdPLhdEXg==}
     dependencies:
       '@types/web-bluetooth': 0.0.17
-      '@vueuse/metadata': 10.2.1
-      '@vueuse/shared': 10.2.1(vue@3.3.4)
+      '@vueuse/metadata': 10.4.1
+      '@vueuse/shared': 10.4.1(vue@3.3.4)
       vue-demi: 0.14.5(vue@3.3.4)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
 
-  /@vueuse/metadata@10.2.1:
-    resolution: {integrity: sha512-3Gt68mY/i6bQvFqx7cuGBzrCCQu17OBaGWS5JdwISpMsHnMKKjC2FeB5OAfMcCQ0oINfADP3i9A4PPRo0peHdQ==}
+  /@vueuse/metadata@10.4.1:
+    resolution: {integrity: sha512-2Sc8X+iVzeuMGHr6O2j4gv/zxvQGGOYETYXEc41h0iZXIRnRbJZGmY/QP8dvzqUelf8vg0p/yEA5VpCEu+WpZg==}
 
-  /@vueuse/shared@10.2.1(vue@3.3.4):
-    resolution: {integrity: sha512-QWHq2bSuGptkcxx4f4M/fBYC3Y8d3M2UYyLsyzoPgEoVzJURQ0oJeWXu79OiLlBb8gTKkqe4mO85T/sf39mmiw==}
+  /@vueuse/shared@10.4.1(vue@3.3.4):
+    resolution: {integrity: sha512-vz5hbAM4qA0lDKmcr2y3pPdU+2EVw/yzfRsBdu+6+USGa4PxqSQRYIUC9/NcT06y+ZgaTsyURw2I9qOFaaXHAg==}
     dependencies:
       vue-demi: 0.14.5(vue@3.3.4)
     transitivePeerDependencies:
@@ -3015,8 +3049,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /camera-controls@2.7.0(three@0.155.0):
-    resolution: {integrity: sha512-HONMoMYHieOCQOoweS639bdWHP/P/fvVGR08imnECGVUp04mqGfsX/zp1ZufLeiAA5hA6i1JhP6SrnOwh01C0w==}
+  /camera-controls@2.7.1(three@0.155.0):
+    resolution: {integrity: sha512-xkXpMRp8h7FDSXtN3W0/1CQ9q6jN4B3Use2YmzVpL7ERIqU7yfiXWWZhvQAk9FrOAp7So9vNs9hvP2lAYCZ64A==}
     peerDependencies:
       three: '>=0.126.1'
     dependencies:
@@ -7029,8 +7063,8 @@ packages:
       source-map-support: 0.5.21
     dev: true
 
-  /three-stdlib@2.23.13(three@0.155.0):
-    resolution: {integrity: sha512-WU4XHs4E6szAyoREzTs5bUAc1WFadiz5jRjNlA7aIIqf+raT4jfA320P0XmlyZz/wJwmpZnOuki4kAFsmadkTQ==}
+  /three-stdlib@2.25.0(three@0.155.0):
+    resolution: {integrity: sha512-E1zW4szHzRsQqiYWzDwBDn7xkeoZEUeIrzyI//AClSi9t7m6BIcN1dWTUATVoNw9Z5d8FhGHCfwgo4tFJ2T8+Q==}
     peerDependencies:
       three: '>=0.128.0'
     dependencies:
@@ -7121,6 +7155,9 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /tweakpane@4.0.0:
+    resolution: {integrity: sha512-U1kbExuRj921my8EX7VHq+ajYoIIzlE7+4P94CtHkBBLw0ggq8ktyY6cUCHb/lOKrTUS7N0OKY1HawBcX4vecA==}
 
   /type-fest@0.21.3:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
