@@ -9,7 +9,7 @@ dependencies:
     specifier: ^0.4.11
     version: 0.4.11(vue@3.3.4)
   '@tresjs/cientos':
-    specifier: ^3.2.0
+    specifier: ^3.3.0
     version: 3.3.0(@tresjs/core@3.2.1)(three@0.156.1)(tweakpane@4.0.1)(vue@3.3.4)
   gsap:
     specifier: ^3.12.2
@@ -3199,7 +3199,7 @@ packages:
     resolution: {integrity: sha512-6slSBEV1lMKcX13DBifvnDFpNno5WXhw4j/ff7RI0y51BZiDqEe5dNhhjhIQ3iCOQuzsm2MbVzmwqbN78BBhPg==}
     hasBin: true
     dependencies:
-      tsx: 3.12.8
+      tsx: 3.12.9
     dev: true
 
   /esprima@4.0.1:
@@ -6313,8 +6313,8 @@ packages:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
-  /tsx@3.12.8:
-    resolution: {integrity: sha512-Lt9KYaRGF023tlLInPj8rgHwsZU8qWLBj4iRXNWxTfjIkU7canGL806AqKear1j722plHuiYNcL2ZCo6uS9UJA==}
+  /tsx@3.12.9:
+    resolution: {integrity: sha512-N9Cpuiy55IcemQ2kouH1ZqDvjUa31mkhIYmnJKnvDp0sLQrK9MUrRuN/XzW70iTk5a2kX2A63wLYWORwa34vug==}
     hasBin: true
     dependencies:
       '@esbuild-kit/cjs-loader': 2.4.2
