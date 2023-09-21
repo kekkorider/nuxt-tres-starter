@@ -13,14 +13,14 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.3",
+    "@nuxt/devtools": "^0.8.4",
     "@nuxtjs/google-fonts": "^3.0.2",
     "@tresjs/nuxt": "^1.1.7",
     "@tweakpane/core": "^2.0.1",
     "@tweakpane/plugin-essentials": "^0.2.0",
-    "@types/node": "^18.17.17",
+    "@types/node": "^18.17.18",
     "nuxt": "^3.7.3",
-    "sass": "^1.67.0",
+    "sass": "^1.68.0",
     "sass-loader": "^13.3.2",
     "vite-plugin-glsl": "^1.1.2"
   },
