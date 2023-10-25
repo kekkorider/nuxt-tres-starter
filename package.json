@@ -13,22 +13,21 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.5",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "@tresjs/nuxt": "^1.1.9",
+    "@tresjs/nuxt": "^1.2.2",
     "@tweakpane/core": "^2.0.1",
     "@tweakpane/plugin-essentials": "^0.2.0",
-    "@types/node": "^18.18.4",
-    "nuxt": "^3.7.4",
-    "sass": "^1.69.1",
+    "@types/node": "^18.18.7",
+    "nuxt": "^3.8.0",
+    "sass": "^1.69.4",
     "sass-loader": "^13.3.2",
     "vite-plugin-glsl": "^1.1.2"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11",
-    "@tresjs/cientos": "^3.5.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@tresjs/cientos": "^3.5.1",
     "gsap": "^3.12.2",
-    "pinia": "^2.1.6",
+    "pinia": "^2.1.7",
     "three": "^0.157.0"
   }
 }

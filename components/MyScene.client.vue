@@ -9,11 +9,15 @@
 		<Suspense>
 			<Suzanne :position="[2, 0, 0]" />
 		</Suspense>
+
+		<Suspense>
+			<StatsGl />
+		</Suspense>
 	</TresCanvas>
 </template>
 
 <script setup>
-import { OrbitControls, useTweakPane } from '@tresjs/cientos'
+import { OrbitControls, useTweakPane, StatsGl } from '@tresjs/cientos'
 
 //
 // Refs
