@@ -17,13 +17,12 @@
 </template>
 
 <script setup>
-import { OrbitControls, useTweakPane, StatsGl } from '@tresjs/cientos'
+import { OrbitControls, StatsGl } from '@tresjs/cientos'
+import { Pane } from 'tweakpane'
 
 //
 // Refs
 //
-const { pane } = useTweakPane()
-
 const sampleStore = useSampleStore()
 
 const config = reactive({
@@ -49,6 +48,8 @@ onMounted(async () => {
 // Functions
 //
 function createDebugPane() {
+	const pane = new Pane()
+
 	pane.title = 'Configuration'
 
 	pane.addBinding(gl, 'clearColor', { label: 'Clear Color', colorMode: 'hex' })
